@@ -1,0 +1,27 @@
+/* HOJA DE ESTILOS DESARROLLADA POR JAVIER LÓPEZ SÁNCHEZ */
+/* --------------------------------------------------------------------------------------------------------------------*/
+
+/* CAMBIO DEL FONDO GÉNERICO BLANCO DE LA PÁGINA WEB POR UNO PROPIO */
+body{
+	background-image: url("../images/page_background.png");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/* LOS BOTONES SERÁN NEGROS CON TEXTO BLANCO */
+button{
+    background-color: black;
+    color: white;
+}
+
+/* LA SECCIÓN DE ABAJO (BOTTOM SECTION) MOSTRARÁ LOS BOTONES Y DATOS EN FILA UNO TRAS OTRO */
+.data_in_game, .separation_line{
+	display: inline;
+}
+
+/* LAS LÍNEAS QUE SEPARAN LOS DIFERENTES DATOS SERÁN INVISIBLES (POSEEN EL MISMO COLOR QUE EL FONDO) */
+.separation_line{
+	color: #EFEFEF;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------*/

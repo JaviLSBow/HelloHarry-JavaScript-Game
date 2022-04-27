@@ -1,0 +1,70 @@
+<!-- PÁGINA WEB DESARROLLADA POR JAVIER LÓPEZ SÁNCHEZ -->
+<!---------------------------------------------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+
+<html>
+
+    <header>
+
+        <title> HelloHarry </title> <!-- Título que se muestra en la pestaña de la web -->
+
+        <link href="styles/style.css" rel="stylesheet">  <!-- Asociación de la hoja de estilos -->
+
+        <script type = "text/javascript" src = "scripts/Harry.js"> </script>  <!-- Asociación del script de Harry -->
+        <script type = "text/javascript" src = "scripts/Stats.js"> </script>  <!-- Asociación del script de las estadísticas -->
+        <script type = "text/javascript" src = "scripts/HarryGame.js"> </script>  <!-- Asociación del script principal -->
+        
+
+    </header>
+
+<!---------------------------------------------------------------------------------------------------------------------->
+
+    <body>
+
+        <div class = "top_section" id = "image_container">  <!-- Sección superior: muestra la imagen correspondiente en cada momento -->
+
+            <img id="main_image"> </img>
+
+        </div>
+
+        
+        <div class = "bottom_section" id = "buttons_container">  <!-- Sección inferior: muestra los botones, datos durante el juego y estadísticas finales -->
+
+            <button class = "data_in_game" id = "start_button"> START </button>
+            <button class = "data_in_game" id = "feed_button"> ALIMENTAR </button>
+            <button class = "data_in_game" id = "rest_button"> QUITAR COMIDA </button>
+            <button class = "data_in_game" id = "restart_button"> RESTART </button>
+
+            <p class = "separation_line" > || </p>
+            <p class = "data_in_game" id = "hunger_value"> HAMBRE: 0% </p>
+            <p class = "separation_line" > || </p>
+            <p class = "data_in_game" id = "rest_value"> DESCANSO: 100% </p>
+            <p class = "separation_line" > || </p>
+            <p class = "data_in_game" id = "time_value">   </p>
+            <p class = "separation_line" > || </p>
+            <p class = "data_in_game" id = "reason_value">  </p>
+            <p class = "separation_line" > || </p>
+            <p class = "data_in_game" id = "help_info"> SI HARRY LLEGA AL 100% DE HAMBRE O AL 0% DE DESCANSO 3 VECES PIERDES </p>  <!-- Instrucciones resumidas del juego -->
+
+        </div>
+
+<!---------------------------------------------------------------------------------------------------------------------->
+
+        <div class = "audio_section">  <!-- Sección invisible para almacenar todos los audios del juego (música y voz de Harry) -->
+
+            <audio id = "music_audio"> <source src="harryvoice/music.ogg" type = "audio/ogg"> </audio>
+            <audio id = "intro_audio"> <source src="harryvoice/intro.ogg" type = "audio/ogg"> </audio>
+            <audio id = "feeding_audio"> <source src="harryvoice/rico.ogg" type = "audio/ogg"> </audio>
+            <audio id = "stop_feeding_audio"> <source src="harryvoice/vaya.ogg" type = "audio/ogg"> </audio>
+            <audio id = "hungry_audio"> <source src="harryvoice/hambre.ogg" type = "audio/ogg"> </audio>
+            <audio id = "sleepy_audio"> <source src="harryvoice/sueno.ogg" type = "audio/ogg"> </audio>
+            <audio id = "losing_audio"> <source src="harryvoice/perdido.ogg" type = "audio/ogg"> </audio>
+
+        </div>
+        
+    </body>
+
+</html>
+
+<!---------------------------------------------------------------------------------------------------------------------->
